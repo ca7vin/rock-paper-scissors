@@ -1,0 +1,78 @@
+@import ../../node_modules/bootstrap/scss/bootstrap.scss
+@import ./_font
+@import ./_variables
+
+#general
+    max-height: 90vh !important
+body
+    font-family: 'Barlow'
+    background-image: $bg-gradient 
+    background-repeat: none
+    background-position: center
+#header
+    border: 3px solid #6C757D
+    border-radius: 20px 
+    width: 50vw
+.darkText
+    color: $score-text
+.scoreText
+    color: $dark-text
+    font-size: 60px
+.token
+    width: 200px
+    height: 200px
+    margin: 50px
+    border: 20px solid
+#gameBoard
+    height: 60vh
+    background-image: url(../img/bg-triangle.svg)
+    background-repeat: no-repeat
+    background-position: center
+    background-size: auto
+    .btn
+        width: 150px
+    .RulesDiv
+        width: 150px
+#gameBoard2
+    height: 60vh
+    .btn
+        width: 150px
+    .RulesDiv
+        width: 150px
+.titleH1
+    line-height: 0.8
+    font-size: 48px
+    font-weight: 800 !important
+
+@media  (max-width: 576px) 
+    .resultLg
+        display: none !important
+    .resultSm
+        display: flex !important
+        margin-top: 50px !important
+    #gameBoard2
+        height: 50vh
+    #gameBoard
+        height: 50vh
+        background-size: 50%
+    #header
+        width: 100%
+    h1
+        font-size: 24px !important
+    #tokenPaper
+        width: 100px
+        height: 100px
+        margin: 10px
+        border: 5px solid $paper-gradient !important
+    #tokenRock
+        width: 100px
+        height: 100px
+        margin: 10px
+        border: 5px solid $rock-gradient !important
+    #tokenScissors
+        width: 100px
+        height: 100px
+        margin: 10px
+        border: 5px solid $scissors-gradient !important
+    .modal-body
+        height: 90vh !important
